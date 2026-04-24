@@ -1,0 +1,15 @@
+# uv 虚拟环境
+.venv/
+venv/
+
+# uv 构建产物
+dist/
+build/
+*.egg-info/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# Idea配置
+.idea

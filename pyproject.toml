@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fabopsy_ufanet"
+version = "1.0.0"
+description = "fabopsy_ufanet: a model for predition Expression, AU and Valence & Arousal from face picture"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.26.4",
+    "safetensors>=0.7.0",
+    "timm>=1.0.22",
+    "torch>=2.2.2",
+    "torchvision>=0.17.2",
+]
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu121", marker = "sys_platform == 'linux'" },
+]
+torchvision = [
+  { index = "pytorch-cu121", marker = "sys_platform == 'linux'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[project.urls]
+Repository = "https://github.com/russell-li/fabopsy_ufanet.git"
