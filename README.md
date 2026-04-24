@@ -8,7 +8,7 @@
 pip install git+https://github.com/russell-li/fabopsy_ufanet.git
 
 **uv安装**
-uv add git+https://github.com/russell-li/fabopsy_ufanet.git
+uv add "fabopsy_ufanet @ file:///data1/lichiqin/fabopsy_ufanet"
 
 ## 快速开始
 参考demo.py
