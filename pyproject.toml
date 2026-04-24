@@ -30,4 +30,4 @@ url = "https://download.pytorch.org/whl/cu121"
 explicit = true
 
 [project.urls]
-Repository = "https://github.com/russell-li/fabopsy_ufanet.git"
+Repository = "https://github.com/lcqin111/fabopsy_ufanet.git"

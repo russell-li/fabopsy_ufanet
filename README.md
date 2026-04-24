@@ -5,10 +5,10 @@
 
 ## 环境依赖安装
 **pip安装**
-pip install git+https://github.com/russell-li/fabopsy_ufanet.git
+pip install git+https://github.com/lcqin111/fabopsy_ufanet.git
 
 **uv安装**
-uv add "fabopsy_ufanet @ file:///data1/lichiqin/fabopsy_ufanet"
+uv add "fabopsy_ufanet @ git+https://github.com/lcqin111/fabopsy_ufanet.git"
 
 ## 快速开始
 参考demo.py
