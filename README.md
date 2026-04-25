@@ -1,4 +1,5 @@
 # FaboPsy_UFAnet
+Unified Facial Affect Network (UFA-Net)
 面部表情多任务识别项目，支持单图推理。
 
 **任务包括**：表情分类（7类） · AU 检测（16个） · 效价-唤醒度回归
@@ -12,6 +13,9 @@ uv add "fabopsy_ufanet @ git+https://github.com/lcqin111/fabopsy_ufanet.git"
 
 ## 快速开始
 参考demo.py
+
+### 人脸对齐方法
+参考five_pts_alignment.py
 
 ### Detector.detect说明
 - **输入**：`img_path` (str)
