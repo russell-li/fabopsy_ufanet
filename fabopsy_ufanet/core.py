@@ -5,7 +5,7 @@ Author: lcqin111
 Version: V1.0
 File: core.py
 Description: 对外接口模块 —— Detector 类
-    输入: model_version (str), img_path (str)
+    输入: model_version (str), img (numpy.ndarray)
     输出: dict，包含七个基本表情概率、16个AU预测、valence与arousal
     EMO_NAMES: ["neutral", "anger", "disgust", "fear", "happy", "sad", "surprise"]
     AU_NAMES: ["AU1", "AU2", "AU4", "AU5", "AU6", "AU7","AU9", "AU10", "AU12", "AU15",
@@ -63,11 +63,9 @@ class Detector:
         self.model.load_state_dict(checkpoint, strict=True)
 
     @torch.no_grad()
-    def detect(self, img_path: str):
-        if not os.path.isfile(img_path):
-            raise FileNotFoundError(f"Image file not found: {img_path}")
+    def detect(self, img):
 
-        img_tensor = _TRANSFORM(Image.open(img_path).convert("RGB")).unsqueeze(0).to(self.device)
+        img_tensor = _TRANSFORM(Image.fromarray(img)).unsqueeze(0).to(self.device)
         cls_preds, au_preds, valence_preds, arousal_preds = self.model(img_tensor)
 
         # Emotion Classification
