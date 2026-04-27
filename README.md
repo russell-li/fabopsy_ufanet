@@ -18,7 +18,7 @@ uv add "fabopsy_ufanet @ git+https://github.com/lcqin111/fabopsy_ufanet.git"
 参考fabopsy_ufanet/five_pts_alignment.py
 
 ### Detector.detect说明
-- **输入**：`img_path` (str)
+- **输入**：`img` (numpy.array)
 - **输出**：依次为七个基本表情概率、16个AU预测概率、valence 与 arousal
 #### 输出字段定义
 表情类别返回值为标准 Python 列表，具体结构如下：
