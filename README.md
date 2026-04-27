@@ -15,7 +15,7 @@ uv add "fabopsy_ufanet @ git+https://github.com/lcqin111/fabopsy_ufanet.git"
 参考demo.py
 
 ### 人脸对齐方法
-参考five_pts_alignment.py
+参考fabopsy_ufanet/five_pts_alignment.py
 
 ### Detector.detect说明
 - **输入**：`img_path` (str)

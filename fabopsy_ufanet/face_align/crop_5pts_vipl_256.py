@@ -1,5 +1,5 @@
 import numpy as np
-from .matlab_cp2tform import get_similarity_transform_for_cv2
+from fabopsy_ufanet.face_align.matlab_cp2tform import get_similarity_transform_for_cv2
 import cv2
 
 

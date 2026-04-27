@@ -1,4 +1,4 @@
-from face_align import crop_5pts_vipl_256   # import the function crop_align
+from fabopsy_ufanet.face_align import crop_5pts_vipl_256   # import the function crop_align
 
 def face_align_crop(image, keypoints):
     '''
